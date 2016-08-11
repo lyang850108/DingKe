@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">定课</string>
+    <string name="prompt_email">电话</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">号码无效</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">选项必填</string>
+    <string name="permission_rationale">"由于权限的要求需填入电话号码."
+    </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="poetry">"Some of us get dipped in flat \nsome in satin some in gloss \nBut every once in a while you find someone \nwho's iridescent and when you do \nnothing will ever compare."</string>
+    <string name="tip_pull_to_refresh">下拉可刷新内容</string>
+    <string name="tip_ok">知道了</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="login_username">用户名:</string>
+    <string name="login_password">密码:</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_log_out">退出登录</string>
+
+    <string name="scanning_list_name">名称：</string>
+    <string name="scanning_list_address">地址：</string>
+
+    <string name="restore_default">"还原默认设置"</string>
+
+    <string name="open_gps">"请打开GPS"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">通用</string>
+    <string name="activation">激活</string>
+    <string name="add_avatar">请点击添加头像照片</string>
+    <string name="avatar_im">头像</string>
+    <string name="avatar_name">名称</string>
+    <string name="bind">绑定</string>
+    <string name="save">保存</string>
+    <string name="save_successful">保存成功</string>
+    <string name="pref_title_social_recommendations">自动连接</string>
+    <string name="pref_description_social_recommendations">打开此选项，设备靠近时会自动连接
+    </string>
+
+    <string name="pref_title_display_name">设备地址</string>
+    <string name="upgrade_version">版本升级</string>
+    <string name="defaultt_version_description">请点击确定升级到最新的版本</string>
+    <string name="upgrade_info_get_error">获取服务器更新信息失败</string>
+    <string name="download_apk_failed">下载新版本失败</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">手动添加设备</string>
+    <string name="pref_title_add_friends_to_messages_detail">主页面会显示设备列表，点击添加</string>
+
+
+    <string name="active_search">请激活手环 搜索设备中.......</string>
+
+    <string name="pref_title_type">类型</string>
+    <string name="pref_title_longtitude">经度</string>
+    <string name="pref_title_latitude">纬度</string>
+    <string name="pref_title_radius">半径</string>
+    <string name="pref_title_countrycode">国家码</string>
+    <string name="pref_title_country">国家</string>
+    <string name="pref_title_citycode">城市码</string>
+    <string name="pref_title_city">城市</string>
+
+    <string name="pref_title_district">城市码</string>
+    <string name="pref_title_street">城市</string>
+    <string name="pref_title_address">城市</string>
+    <string name="pref_title_description">描述</string>
+    <string name="confirm">确定</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">数据 &amp; 同步</string>
+
+    <string name="pref_title_sync_frequency">消息同步频率</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 second</item>
+        <item>20 second</item>
+        <item>1 min</item>
+        <item>3 min</item>
+        <item>6 min</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>20</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">系统同步设定</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">通知</string>
+
+    <string name="pref_title_new_message_notifications">新消息通知</string>
+
+    <string name="pref_title_ringtone">铃声</string>
+    <string name="pref_ringtone_silent">静音</string>
+
+    <string name="pref_title_vibrate">震动</string>
+    <string name="title_activity_device_manager">DeviceManagerActivity</string>
+
+    <string name="travelnote">游记</string>
+    <string name="share">分享AAA</string>
+    <string name="qm_content"> 完美的一切
+
+嗓音，面容，身体，头发，四肢，仿佛花朵的化身般的心灵
+
+很多人提到眼睛不可能那么大，基因学家也许可以制造出这么完美的生物呢~只要能保证和二次元美人的观感（指的并不是看上去有些什么，还包括想些什么，启发和促进了观者的什么，比如观者认为动漫中的她无论如何也是人类，因为这是动漫。所以在现实中，人们无论如何都会认为她是人类——
+因为她就是完美的化身；
+
+她——就应该拥有这样的眼睛，
+
+她——拥有的就是这样的眼睛，
+
+她拥有这样的眼睛的权利是任何都无法夺取，也无法作出指责——在作出指责的欲望产生之前就已经被眼前的以不可阻挡之势如倾覆的天空之城般连绝望也顷刻不留地沉入心湖中的深渊内部的无限深远的深处的美好所窒息的无人能匹敌的崇高而翩然的伟大）或许遗传学家可以使那么美好的眼睛得以实现，只要把眼睛在二次元化的构想之上随机诞生就可以了，不是吗？
+完美，是指任何一个没有受到不符合其本质的精神污染的人类都会在见到的时候产生巨大的渗透至全身心的喜悦和动摇.
+至于身体方面的完美的定义到底是依照所谓君临所有人类（指不仅仅是女性的第一，还是整个人类的第一）的“完美”，还是依照以人类基因技术所能达到的人类这个物种在当前进化程度上的完美，那就要请生物学家和基因学家来讲讲了 = =
+
+头脑同样会让世界上任何一个没有受到不符合其本质的精神污染的人类时刻感觉到“这是生命中最为重大的时刻而不能自已”，并且在见到的瞬间就明白自己现在，以后和将来都必须为她而活，命运的基础在此时就已经奠定，无论什么样的人。每一句话，每一个动作都充满了无比茁壮的雌性气息，因为她就是完美的女性
+
+
+
+
+
+
+有人说海了去了，可是我说的是完美的身体，生物学上的哦，并不是看起来好看就可以了。完美就这么难以理解，难道是随便一个“女神”就可以充数的吗？</string>
+    <string name="ym_main_page">首页</string>
+    <string name="music">音乐</string>
+    <string name="english_learning">英语学习</string>
+    <string name="main_page">首页</string>
+    <string name="zhihu_body1">最近太忙了，而且预计以后一段时间的重心都不在股票上，不想做短线了。现在有部分闲钱，每月有固定收入，银行利息太低，目前又没...展开说明</string>
+    <string name="zhihu_body2">最近太忙了，而且预计以后一段时间的重心都不在股票上，不想做短线了。现在有部分闲钱，每月有固定收入，银行利息太低，目前又没有好的投资项目，准</string>
+    <string name="zhihu_tilte">最近由于时间紧张，工作繁忙，也没有心思选股</string>
+</resources>
