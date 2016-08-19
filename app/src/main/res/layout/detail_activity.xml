@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/cover_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/program_info"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clickable="true" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/image_detail_cover"
+                android:background="@android:color/white"
+                android:scaleType="centerCrop"
+                android:id="@+id/detail_pic" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:src="@mipmap/image_detail_favorite"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/btn_heart" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/image_detail_share"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/btn_more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Program title and location"
+                android:textAppearance="@style/ItemTitleTextStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@mipmap/image_detail_avail"/>
+        </RelativeLayout>
+
+        <com.original.abroadeasy.widget.ViewPagerTabs
+            android:id="@+id/pager_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_marginTop="200dp"
+            android:textAllCaps="true"
+            style="@style/ActionBarTabTextStyle" />
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/black"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        app:layout_behavior="com.original.abroadeasy.widget.TabBarBehavior"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/btn_phone"
+            android:drawableTop="@mipmap/ic_phone"
+            style="@style/navigation_bottom_radio" />
+
+
+        <RadioButton
+            android:id="@+id/btn_setting"
+            style="@style/navigation_bottom_radio"
+            android:drawableTop="@mipmap/ic_unknown" />
+
+        <RadioButton
+            android:id="@+id/btn_message"
+            android:drawableTop="@mipmap/ic_message"
+            style="@style/navigation_bottom_radio" />
+
+    </RadioGroup>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/appointment_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_find"
+        app:backgroundTint="#ef9b1d"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_behavior="com.original.abroadeasy.widget.ScrollFABBehavior"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/orange_100" />
+
+</android.support.design.widget.CoordinatorLayout>
