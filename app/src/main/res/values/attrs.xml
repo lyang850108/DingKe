@@ -24,4 +24,11 @@
 
     <item type="id" name="tag_first"></item>
 
+    <attr format="boolean" name="centered"/>
+    <attr format="reference" name="fillImg"/>
+    <attr format="reference" name="pageImg"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+
 </resources>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.original.abroadeasy.widget.BannerGallery
+    <com.original.dingke.widget.BannerGallery
         android:id="@+id/banner_gallery"
         android:layout_width="match_parent"
         android:layout_height="192dp"

@@ -29,7 +29,7 @@
         app:borderWidth="0dp"
         app:elevation="6dp"
         app:fabSize="mini"
-        app:layout_behavior="com.original.abroadeasy.widget.ScrollFABBehavior"
+        app:layout_behavior="com.original.dingke.widget.ScrollFABBehavior"
         app:layout_anchor="@id/swipe_refresh_layout"
         app:layout_anchorGravity="top|right"
         app:pressedTranslationZ="12dp"
@@ -42,7 +42,7 @@
         android:background="@android:color/black"
         android:layout_gravity="bottom"
         android:gravity="center"
-        app:layout_behavior="com.original.abroadeasy.widget.TabBarBehavior"
+        app:layout_behavior="com.original.dingke.widget.TabBarBehavior"
         android:orientation="horizontal" >
 
         <RadioButton

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AbroadEasy</string>
+    <string name="app_name">Dingke</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="login">Login</string>
@@ -18,9 +18,7 @@
     <string name="way_log_in">choose any kind of login way</string>
     <string name="title_log_in">Login aE</string>
     <string name="setting_log_out">Log Out</string>
-    <string name="home">Home</string>
-    <string name="explore">Explore</string>
-    <string name="blog">Blog</string>
+
     <string name="profile">Profile</string>
     <!-- The font-family to use for the text inside the searchbox.
          Do not translate. -->
@@ -185,4 +183,11 @@
     <string name="button_true">OK</string>
     <string name="button_cancel">Cancel</string>
     <string name="tip_title">Tips</string>
+
+    <string name="skip">SKIP</string>
+    <string name="tutorial_done">DONE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_material_tutorial">MaterialTutorialActivity</string>
 </resources>

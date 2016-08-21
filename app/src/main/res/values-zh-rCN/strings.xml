@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AE</string>
+    <string name="app_name">定课</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
     <string name="login">登录</string>
@@ -143,4 +143,17 @@
     <string name="zhihu_body1">最近太忙了，而且预计以后一段时间的重心都不在股票上，不想做短线了。现在有部分闲钱，每月有固定收入，银行利息太低，目前又没...展开说明</string>
     <string name="zhihu_body2">最近太忙了，而且预计以后一段时间的重心都不在股票上，不想做短线了。现在有部分闲钱，每月有固定收入，银行利息太低，目前又没有好的投资项目，准</string>
     <string name="zhihu_tilte">最近由于时间紧张，工作繁忙，也没有心思选股</string>
+
+    <string name="home">课程</string>
+    <string name="explore">探索</string>
+    <string name="blog">文章</string>
+
+    <string name="slide_1_african_story_books">New African Story Books</string>
+    <string name="slide_2_volunteer_professionals">Created by Volunteer Professionals</string>
+    <string name="slide_3_download_and_go">Download and Read on the go</string>
+    <string name="slide_4_different_languages">Available in different languages</string>
+    <string name="slide_1_african_story_books_subtitle">That anyone can freely translate and distribute.</string>
+    <string name="slide_2_volunteer_professionals_subtitle">On a single day, designers, writers and illustrators meet to create cool books.</string>
+    <string name="slide_3_download_and_go_subtitle">On the bus, in a train, wherever you are - the books are there too.</string>
+    <string name="slide_4_different_languages_subtitle">English, Zulu, Afrikaans, Xhosa and more!</string>
 </resources>

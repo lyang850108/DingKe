@@ -10,7 +10,7 @@
     android:layout_marginTop="4dp"
     android:background="#fafafa"
     android:translationZ="1dp"
-    app:layout_behavior="com.original.abroadeasy.util.LayerTopBehavior">
+    app:layout_behavior="com.original.dingke.util.LayerTopBehavior">
 
     <LinearLayout
         android:layout_width="match_parent"
