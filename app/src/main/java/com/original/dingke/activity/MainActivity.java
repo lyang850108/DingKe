@@ -9,6 +9,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -25,7 +26,10 @@ import com.original.dingke.fragment.BlogFragment;
 import com.original.dingke.fragment.ExploreFragment;
 import com.original.dingke.fragment.HomeFragment;
 import com.original.dingke.fragment.UserInfoFragment;
+import com.original.dingke.util.LogUtil;
 import com.original.dingke.util.PreferenceUtils;
+
+import java.math.BigDecimal;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -139,9 +143,12 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
 
         //add by yangli
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_layout);
+        setSupportActionBar(toolbar);
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, null, R.string.abc_action_bar_home_description, R.string.abc_action_bar_up_description);
+                this, drawer, toolbar, R.string.abc_action_bar_home_description, R.string.abc_action_bar_up_description);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
@@ -333,6 +340,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
         } else if (id == R.id.nav_share) {
 
+            System.out.println("a" + "b");
+            System.out.println('a' + "b");
+            System.out.println('a' + 'b');
         } else if (id == R.id.nav_send) {
 
         }
