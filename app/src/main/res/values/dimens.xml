@@ -81,4 +81,5 @@
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
     <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="search_icon_size">48dp</dimen>
 </resources>

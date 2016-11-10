@@ -4,7 +4,9 @@ import android.content.Context;
 
 
 import com.original.dingke.R;
+import com.original.dingke.app.App;
 import com.original.dingke.tutorial.TutorialItem;
+import com.original.dingke.util.PreferenceUtils;
 
 import java.util.ArrayList;
 
@@ -36,7 +38,12 @@ public class SplashPresenter implements SplashContract.UserActionsListener {
             splashView.loadMainScreen();
         }*/
 
-        splashView.loadTutorial();
+        if (PreferenceUtils.isFirstLaunch(App.getsContext())) {
+            splashView.loadTutorial();
+        } else {
+            splashView.loadMainScreen();
+        }
+        //splashView.loadTutorial();
     }
 
     @Override

@@ -6,7 +6,7 @@
     android:id="@+id/search_body"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:visibility="invisible"
+    android:visibility="visible"
     app:cardBackgroundColor="@android:color/white"
     app:cardCornerRadius="2dp">
 
@@ -17,7 +17,8 @@
         <LinearLayout
             android:id="@+id/linearLayout_search"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
 
@@ -27,9 +28,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#fff"
-                android:gravity="center_vertical"
                 android:hint="@string/edit_text_search_hint"
-                android:textColorHint="@color/grey_100"
+                android:textColorHint="@color/grey_300"
                 android:imeOptions="actionSearch"
                 android:inputType="textCapWords"
                 android:focusable="false"
@@ -39,8 +39,8 @@
 
             <ImageView
                 android:id="@+id/clearSearch"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/search_icon_size"
+                android:layout_height="@dimen/search_icon_size"
                 android:background="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:contentDescription="@string/voice_cancel"
@@ -49,8 +49,8 @@
 
             <ImageView
                 android:id="@+id/do_search"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/search_icon_size"
+                android:layout_height="@dimen/search_icon_size"
                 android:background="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:contentDescription="@string/do_search"
