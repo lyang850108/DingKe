@@ -57,6 +57,7 @@ public class HomeFragment extends BaseFragment {
 
     private HeaderViewHolder mHeaderViewHolder;
     private MyHandler mHandler;
+    private LinearLayout mHeadLayout;
 
 
     public HomeFragment() {
@@ -330,11 +331,14 @@ public class HomeFragment extends BaseFragment {
     }
 
     private void initBanner() {
-        mBannerLayout = (FrameLayout) mActivity.getLayoutInflater().inflate(R.layout.home_banner_layout, null);
+        //mBannerLayout = (FrameLayout) mActivity.getLayoutInflater().inflate(R.layout.home_banner_layout, null);
         // somehow the layoutParams will lost after inflate...???
-        mBannerLayout.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
+        mHeadLayout = (LinearLayout) mActivity.getLayoutInflater().inflate(R.layout.home_banner_layout, null);
+        mBannerLayout = (FrameLayout) mHeadLayout.findViewById(R.id.banner_layout);
+        mHeadLayout.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                 FrameLayout.LayoutParams.MATCH_PARENT));
-        mHeaderViewHolder = new HeaderViewHolder(mBannerLayout);
+        //mHeaderViewHolder = new HeaderViewHolder(mBannerLayout);
+        mHeaderViewHolder = new HeaderViewHolder(mHeadLayout);
         mBannerGallery = (BannerGallery) mBannerLayout.findViewById(R.id.banner_gallery);
         mDotLayout = (LinearLayout) mBannerLayout.findViewById(R.id.banner_dot);
         BannerAdapter adapter = new BannerAdapter(mActivity);

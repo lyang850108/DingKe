@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/banner_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <com.original.dingke.widget.BannerGallery
-        android:id="@+id/banner_gallery"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/banner_layout"
         android:layout_width="match_parent"
-        android:layout_height="192dp"
-        android:soundEffectsEnabled="false" />
+        android:layout_height="wrap_content">
+
+        <com.original.dingke.widget.BannerGallery
+            android:id="@+id/banner_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:soundEffectsEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/banner_dot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dot_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/banner_dot_focus"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
 
     <LinearLayout
-        android:id="@+id/banner_dot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
-        android:layout_marginBottom="4dp"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:src="@mipmap/ic_menu_icon"
+            android:layout_weight="1"
+            android:padding="@dimen/default_circle_indicator_radius"/>
 
         <ImageView
-            android:id="@+id/dot_focus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/banner_dot_focus"
-            android:visibility="gone" />
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:src="@mipmap/ic_menu_icon"
+            android:layout_weight="1"
+            android:padding="@dimen/default_circle_indicator_radius"/>
+
+        <ImageView
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:src="@mipmap/ic_menu_icon"
+            android:layout_weight="1"
+            android:padding="@dimen/default_circle_indicator_radius"/>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>
