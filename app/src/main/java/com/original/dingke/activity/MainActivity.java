@@ -37,6 +37,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener{
 
+    //test push git branch
     private static final String TAG = "ABE_MainActivity";
     private BaseFragment mCurrentFragment;
     private static final String[] FRAGMENT_TAGS = {"home", "find", "search", "user"};
