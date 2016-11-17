@@ -46,6 +46,7 @@ dependencies {
     //解析JSON数据  代码地址-----> https://code.google.com/p/google-gson/
     //弹出提示信息    代码地址-----> https://github.com/johnkil/Android-AppMsg
     //图片加载  代码地址-----> https://github.com/square/picasso
+    testCompile 'junit:junit:4.12'
     compile files('libs/MobCommons.jar')
     compile files('libs/MobTools.jar')
     compile files('libs/ShareSDK-Core-2.6.5.jar')
