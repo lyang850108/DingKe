@@ -24,6 +24,7 @@ import com.original.dingke.adapter.HomeListAdapter;
 import com.original.dingke.datas.beans.BeansUtils;
 import com.original.dingke.datas.beans.MovieInfoBean;
 import com.original.dingke.datas.beans.MovieMajorInfos;
+import com.original.dingke.datas.beans.MovieTops;
 import com.original.dingke.datas.beans.MovieUSBox;
 import com.original.dingke.datas.beans.entities.SubjectEntity;
 import com.original.dingke.datas.beans.entities.SubjectsEntity;
@@ -217,7 +218,7 @@ public class HomeFragment extends BaseFragment {
             }
             try {
                 //mNewPrograms = App.getRetrofitService().getProgramList(index);
-                MovieUSBox object = DoubanApiUtils.getMovieApiService().getMoviceUSBox(DoubanApiUtils.API_KEY);
+                MovieTops object = DoubanApiUtils.getMovieApiService().getTop250(DoubanApiUtils.API_KEY);
                 collectResultsFromResponse(object);
             } catch (Exception e) {
                 LogUtil.e("doInBackground, Exception:" + e.toString());
@@ -257,13 +258,13 @@ public class HomeFragment extends BaseFragment {
             return;
         }
 
-        List<SubjectsEntity> subjects;
-        SubjectsEntity subjectsEntity;
+        List<SubjectEntity> subjects;
+        SubjectEntity subjectsEntity;
         SubjectEntity subject;
 
         int i;
 
-        MovieUSBox usBox = (MovieUSBox)object;
+        MovieTops usBox = (MovieTops)object;
         subjects = usBox.getSubjects();
         if (subjects != null) {
             for (i = 0; i < subjects.size(); i++) {
@@ -271,15 +272,9 @@ public class HomeFragment extends BaseFragment {
                 if (subjectsEntity == null) {
                     continue;
                 }
-                subject = subjectsEntity.getSubject();
-                if (subject == null) {
-                    continue;
-                }
-
-                LogUtil.d(subject.getTitle());
 
                 //Fill the cache
-                MovieInfoBean movieInfo = new MovieInfoBean(subject);
+                MovieInfoBean movieInfo = new MovieInfoBean(subjectsEntity);
                 HomeItem homeItem = new HomeItem();
                 homeItem.fillDatas(movieInfo.getTitle(), movieInfo.getImageUri(),
                         movieInfo.getAverage(), movieInfo.getFormatedGenres());

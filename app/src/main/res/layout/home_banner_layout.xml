@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -38,26 +37,72 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="5dp"
         >
-        <ImageView
-            android:layout_width="@dimen/abc_action_bar_default_height_material"
-            android:layout_height="@dimen/abc_action_bar_default_height_material"
-            android:src="@mipmap/ic_menu_icon"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_weight="1"
-            android:padding="@dimen/default_circle_indicator_radius"/>
+            >
+            <ImageView
+                android:id="@+id/home_find_menu"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/abc_action_bar_default_height_material"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:src="@color/colorPrimary"
+                />
 
-        <ImageView
-            android:layout_width="@dimen/abc_action_bar_default_height_material"
-            android:layout_height="@dimen/abc_action_bar_default_height_material"
-            android:src="@mipmap/ic_menu_icon"
-            android:layout_weight="1"
-            android:padding="@dimen/default_circle_indicator_radius"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_find_menu"
+                android:text="寻人"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
 
-        <ImageView
-            android:layout_width="@dimen/abc_action_bar_default_height_material"
-            android:layout_height="@dimen/abc_action_bar_default_height_material"
-            android:src="@mipmap/ic_menu_icon"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_weight="1"
-            android:padding="@dimen/default_circle_indicator_radius"/>
+            >
+            <ImageView
+                android:id="@+id/home_dna_menu"
+                android:layout_width="@dimen/abc_action_bar_default_height_material"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:src="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_dna_menu"
+                android:text="DNA"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/home_help_menu"
+                android:layout_width="@dimen/abc_action_bar_default_height_material"
+                android:layout_height="@dimen/abc_action_bar_default_height_material"
+                android:src="@color/colorPrimary"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_help_menu"
+                android:text="互助群"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
     </LinearLayout>
+
 </LinearLayout>

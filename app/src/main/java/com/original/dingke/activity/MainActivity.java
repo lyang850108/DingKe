@@ -54,6 +54,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     private String mSearchQuery;
 
+    Toolbar toolbar;
+
     //private ActionBarController mActionBarController;
 
     @Bind(R.id.swipe_refresh_layout)
@@ -144,7 +146,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
 
         //add by yangli
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_layout);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_layout);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -235,6 +237,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     mFloatingActionBtn.setVisibility(View.VISIBLE);
                     mFloatingActionBtn.setImageResource(R.mipmap.add);
                     mFloatingActionBtn.setEnabled(true);
+                    setToolBarVisbility(View.VISIBLE);
                     break;
                 case ID_FIND:
                     mCurrentFragment = new ExploreFragment();
@@ -242,18 +245,21 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     mFloatingActionBtn.setVisibility(View.VISIBLE);
                     mFloatingActionBtn.setImageResource(R.mipmap.ic_ab_search);
                     mFloatingActionBtn.setEnabled(true);
+                    setToolBarVisbility(View.VISIBLE);
                     break;
                 case ID_BLOG:
                     mCurrentFragment = new BlogFragment();
                     mSwipRefreshLayout.setEnabled(true);
                     mFloatingActionBtn.setVisibility(View.GONE);
                     mFloatingActionBtn.setEnabled(false);
+                    setToolBarVisbility(View.GONE);
                     break;
                 case ID_USER:
                     mCurrentFragment = new UserInfoFragment();
                     mSwipRefreshLayout.setEnabled(false);
                     mFloatingActionBtn.setVisibility(View.GONE);
                     mFloatingActionBtn.setEnabled(false);
+                    setToolBarVisbility(View.GONE);
                     break;
             }
         }
@@ -341,9 +347,6 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
         } else if (id == R.id.nav_share) {
 
-            System.out.println("a" + "b");
-            System.out.println('a' + "b");
-            System.out.println('a' + 'b');
         } else if (id == R.id.nav_send) {
 
         }
@@ -353,4 +356,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         return true;
     }
 
+    public void setToolBarVisbility(int toolBarVisbility) {
+        if (null != toolbar) {
+            toolbar.setVisibility(toolBarVisbility);
+        }
+    }
 }

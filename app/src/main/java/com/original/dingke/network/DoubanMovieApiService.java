@@ -38,6 +38,9 @@ public interface DoubanMovieApiService {
     public void getTop250(@Query("apikey") String apikey,
                           Callback<MovieTops> callback);
 
+    @GET("/movie/top250")
+    public MovieTops getTop250(@Query("apikey") String apikey);
+
 
     /**
      * 电影条目信息
