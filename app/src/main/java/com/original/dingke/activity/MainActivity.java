@@ -146,7 +146,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
 
         //add by yangli
-        toolbar = (Toolbar) findViewById(R.id.toolbar_layout);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -254,13 +254,13 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     mFloatingActionBtn.setEnabled(false);
                     setToolBarVisbility(View.GONE);
                     break;
-                case ID_USER:
+                /*case ID_USER:
                     mCurrentFragment = new UserInfoFragment();
                     mSwipRefreshLayout.setEnabled(false);
                     mFloatingActionBtn.setVisibility(View.GONE);
                     mFloatingActionBtn.setEnabled(false);
                     setToolBarVisbility(View.GONE);
-                    break;
+                    break;*/
             }
         }
         FragmentTransaction ft = getFragmentManager().beginTransaction();

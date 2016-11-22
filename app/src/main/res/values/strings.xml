@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dingke</string>
+    <string name="app_name">米兔宝</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="login">Login</string>
@@ -193,4 +193,15 @@
     <string name="edit_text_search_hint">Please text search word</string>
     <string name="voice_cancel">Cancel the search</string>
     <string name="do_search">start the search</string>
+
+    <string name="main_search_title">紧急寻人</string>
+    <string name="main_search_follow_bt">参与寻找</string>
+    <string name="main_search_money">酬金-%1$s元</string>
+    <string name="main_search_follow_detail">已有%1$s人参与</string>
+    <string name="main_search_time">%1$s分钟前</string>
+    <string name="main_search_urgent">黄金搜索</string>
+
+    <string name="eg_name">名称</string>
+    <string name="eg_address">深圳市-南山区</string>
+
 </resources>
